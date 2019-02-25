@@ -1,0 +1,24 @@
+{
+  "name": "unblu-visitor-api-demo-esm",
+  "version": "1.0.0",
+  "description": "Demo integrating the unblu visitor JS API using ES Modules and webpack",
+  "main": "/src/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "webpack-serve",
+    "build": "webpack"
+  },
+  "keywords": [
+    "unblu"
+  ],
+  "author": "David Eberlein",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.6.0",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1",
+    "webpack-serve": "^2.0.3"
+  }
+}

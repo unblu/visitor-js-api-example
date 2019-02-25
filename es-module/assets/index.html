@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unblu Js API Demo</title>
+
+    <!-- Unblu snippet, always loading unblu independent of the API. -->
+    <script type="text/javascript" defer="defer" src="http://reference.unblu.com/unblu/visitor.js?x-unblu-apikey=MZsy5sFESYqU7MawXZgR_w"></script>
+    <script type="text/javascript" defer="defer" src="/main.js"></script>
+
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Unblu Visitor API ESM Integration Demo</h1>
+            <p class="lead text-muted">Simple demo showing how to integrate the unblu Visitor JS API into a javascript
+                project using ECMAScript modules and building it with webpack</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="card-deck">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Support</h5>
+                    <p class="card-text">Contact support if you need consulting or help.</p>
+                    <button id="start-chat" class="btn btn-primary mt-2">Write message</button>
+                    <button id="start-audio-call" class="btn btn-secondary mt-2">Voice call</button>
+                    <button id="start-video-call" class="btn btn-secondary mt-2">Video call</button>
+                </div>
+            </div>
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Co-Browse</h5>
+                    <p class="card-text">Enter your PIN here to start co-browsing.</p>
+                    <input id="pin-entry" class="form-control" type="number" placeholder="Enter PIN here" />
+                    <button id="join" class="btn btn-primary mt-2">Start</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
