@@ -6,10 +6,12 @@
     <title>Unblu Js API Demo</title>
 
     <!-- Unblu snippet, always loading unblu independent of the API. -->
+    <!-- Make sure to enable CORS when serving demo from other domain. -->
     <script type="text/javascript" defer="defer"
             src="http://reference.unblu.com/unblu/visitor.js?x-unblu-apikey=MZsy5sFESYqU7MawXZgR_w"></script>
 
     <!-- Unblu api, loaded directly from the unblu server. -->
+    <!-- Make sure to enable CORS when serving demo from other domain. -->
     <script type="text/javascript" defer="defer"
             src="http://reference.unblu.com/unblu/js-api/v2/visitor/visitor-api.min.js"></script>
 
@@ -53,7 +55,7 @@
 </main>
 
 <script>
-    window.onload = async () => {
+    window.onload = function() {
         // alternatively add unblu init code directly instead of using the main.js
     };
 </script>
