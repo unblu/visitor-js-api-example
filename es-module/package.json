@@ -16,16 +16,16 @@
   "author": "David Eberlein",
   "license": "MIT",
   "devDependencies": {
-    "copy-webpack-plugin": "^4.6.0",
-    "webpack": "^4.28.1",
-    "webpack-cli": "^3.2.1",
-    "webpack-serve": "^2.0.3",
+    "copy-webpack-plugin": "^11.0.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-serve": "^4.0.0",
     "@babel/polyfill": "^7.4.3",
     "@babel/runtime": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/plugin-transform-runtime": "^7.4.3",
     "@babel/plugin-transform-regenerator": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
-    "babel-loader": "^8.0.5"
+    "babel-loader": "^8.3.0"
   }
 }
