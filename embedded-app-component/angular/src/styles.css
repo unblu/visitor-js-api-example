@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/bootstrap.min.css";
+
+html, body, app-root {
+  height: 100%;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+}
+
+.unblu-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+unblu-embedded-app {
+  flex-grow: 1;
+}

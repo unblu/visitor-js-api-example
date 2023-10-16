@@ -1,0 +1,36 @@
+{
+  "name": "unblu-embedded-app-component-react-demo",
+  "version": "1.0.0",
+  "description": "Demo integrating the Unblu Embedded App Component into a react app",
+  "author": "David Eberlein",
+  "license": "MIT",
+  "main": "./public/index.html",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "@unblu/embedded-app-component": "^7.0.0"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

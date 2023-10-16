@@ -1,0 +1,18 @@
+html, body, #root {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+.unblu-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+unblu-embedded-app {
+    flex-grow: 1;
+}

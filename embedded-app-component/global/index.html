@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Embedded component global demo</title>
+
+    <!-- Unblu Embedded App Component, loaded directly from the Unblu server. -->
+    <!-- When running on premises you can replace <unblu.cloud> with your installation's origin -->
+    <!-- Note: Make sure to enable CORS when serving demo from another domain. -->
+    <script type="text/javascript" defer="defer"
+            src="https://unblu.cloud/unblu/js-api/embedded-v1/embedded-app-component.min.js"></script>
+
+    <!-- bootstrap css framework for easy styling -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column" style="height: 100%">
+
+<header class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Unblu Embedded component global demo</h1>
+        <p class="lead text-muted">Simple demo showing how to integrate the Unblu Embedded component global demo into a
+            project only using HTML</p>
+    </div>
+</header>
+
+<main class="container flex-grow-1 d-flex flex-column mb-5">
+    <div class="card d-flex flex-grow-1 shadow-sm overflow-hidden">
+        <!-- Add the Unblu web component with the required minimum attributes api-key and server-url -->
+        <unblu-embedded-app api-key="MZsy5sFESYqU7MawXZgR_w" server-url="https://unblu.cloud" class="flex-grow-1">
+        </unblu-embedded-app>
+    </div>
+</main>
+</body>
+</html>

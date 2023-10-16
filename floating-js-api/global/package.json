@@ -1,0 +1,19 @@
+{
+  "name": "unblu-visitor-api-demo-global",
+  "version": "2.0.0",
+  "description": "Demo integrating the unblu visitor JS API as global script",
+  "author": "David Eberlein",
+  "license": "MIT",
+  "main": "/index.html",
+  "keywords": [
+    "unblu",
+    "javascript",
+    "js-api"
+  ],
+  "scripts": {
+    "serve": "http-server ./"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

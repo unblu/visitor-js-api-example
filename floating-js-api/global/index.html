@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unblu Js API Demo</title>
+
+    <!-- Unblu snippet, always loading Unblu independent of the API. -->
+    <!-- When running on premises you can replace <unblu.cloud> with your installation's origin -->
+    <!-- When running on the Unblu cloud replace the API Key <MZsy5sFESYqU7MawXZgR_w> with your API key which you can find under `Account Management Page -> API Keys` -->
+    <!-- Note: Make sure to enable CORS when serving demo from other domain. -->
+    <script type="text/javascript" defer="defer"
+            src="https://unblu.cloud/unblu/visitor.js?x-unblu-apikey=MZsy5sFESYqU7MawXZgR_w"></script>
+
+    <!-- Unblu Visitor JS API, loaded directly from the Unblu server. -->
+    <!-- When running on premises you can replace <unblu.cloud> with your installation's origin -->
+    <!-- Note: Make sure to enable CORS when serving demo from other domain. -->
+    <script type="text/javascript" defer="defer"
+            src="https://unblu.cloud/unblu/js-api/v2/visitor/visitor-api.min.js"></script>
+
+    <!-- local integration of Unblu -->
+    <script type="text/javascript" defer="defer" src="./main.js"></script>
+
+    <!-- bootstrap css framework for easy styling -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="jumbotron text-center">
+    <div class="container">
+        <h1 class="jumbotron-heading">Unblu Visitor JS API bundled integration demo</h1>
+        <p class="lead text-muted">Simple demo showing how to integrate the Unblu Visitor JS API into a javascript
+            project using the bundled all-containing script directly in the HTML</p>
+    </div>
+</header>
+
+<main class="container">
+    <div class="card-deck">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Support</h5>
+                <p class="card-text">Contact support if you need consulting or help.</p>
+                <button id="start-chat" class="btn btn-primary mt-2">Write message</button>
+                <button id="start-audio-call" class="btn btn-secondary mt-2">Voice call</button>
+                <button id="start-video-call" class="btn btn-secondary mt-2">Video call</button>
+            </div>
+        </div>
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Co-Browse</h5>
+                <p class="card-text">Enter your PIN here to start co-browsing.</p>
+                <input id="pin-entry" class="form-control" type="number" placeholder="Enter PIN here"/>
+                <button id="join" class="btn btn-primary mt-2">Start</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    window.onload = function() {
+        // alternatively add unblu init code directly instead of using the main.js
+    };
+</script>
+</body>
+</html>
