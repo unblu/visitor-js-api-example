@@ -2,32 +2,34 @@
 
 This example shows how to integrate the Unblu Embedded App Component into a React web application.
 
-**Note:** *In order to guarantee compatibility, make sure you always use the same version of the Unblu Embedded App Component as the version of the Unblu collaboration server it is runing against.*
+**Note:** *To guarantee compatibility, always use the same version of the Unblu Embedded App Component as the version of the Unblu Collaboration Server it is running against.*
 
 For more information about the Unblu Embedded App Component see its [documentation](https://www.unblu.com/en/docs/latest/reference/unblu-embedded-js-api/).
 
 ## How it works
-In order to use the Unblu Embedded App Component in a React project a couple of steps have to be done:
+There are several steps required to integrate the Unblu Embedded App Component into a React project:
 
 ### Adding the dependency
-First the Unblu Embedded App Component is added to the project as a dependency by adding the `@unblu/embedded-app-component` to the [package.json](package.json) file.
+First, add the Unblu Embedded App Component to the project as a dependency by adding `@unblu/embedded-app-component` to the [package.json](package.json) file.
 
 ### Adding support for the Unblu component
-As the Unblu Embedded App is built as a WebComponent (a custom `HTMLElement`) which is an unknown component in the React system, we have to let React know that it exists which we do in the [typedef](./src/typedefs.ts).
-This allows us to use the `<unblu-embedded-app>` in the `render` function.
+As the Unblu Embedded App is built as a WebComponent (a custom `HTMLElement`) which is an unknown component in the React system, you have to let React know that it exists.
+This is done in the [typedef](./src/typedefs.ts) file.
+This allows you to use the `<unblu-embedded-app>` in the `render` function.
 
-If you are using JavaScript instead of TypeScript this step is not needed.
+This step isn´t required if you're using JavaScript instead of TypeScript.
 
 ### Using the Unblu component in the template and binding attributes
-In our App component's [render function](./src/App.tsx#L46) we add our custom `<unblu-embedded-app>` component.
-Any attribute supported by the the Embedded App Component can be dynamically set using React's standard bindings.
+In your App component's [render function](./src/App.tsx#L46), add the custom `<unblu-embedded-app>` component.
+Any attribute supported by the Embedded App Component can be dynamically set using React's standard bindings.
 
-### Listening to Unblu Custom Events
+### Listening to Unblu custom events
 Custom event listeners have to be added through the API as the Unblu Embedded App Component doesn't expose `on*` properties.
-In order to do so we add a reference to the Unblu element using the `ref` attribute which we can later access in the `componentDidMount()` callback.
+To do so, add a reference to the Unblu element using the `ref` attribute.
+You can then access the reference in the `componentDidMount()` callback.
 
 ### Using the additional API
-Additional to adding event listeners it is possible to access the full API provided by the Unblu Embedded App Component as can be seen in the `componentDidMount()` callback.
+In addition to adding event listeners, it is possible to access the full API provided by the Unblu Embedded App Component as can be seen in the `componentDidMount()` callback.
 
 ## Development server
 

@@ -1,19 +1,21 @@
-# Simple integration of Unblu Embedded App Component only using HTML
+# Simple integration of Unblu Embedded App Component using only HTML
 
-This example shows how to integrate the Unblu Embedded Component App into a website only using HTML without the need of any JavaScript code.
+This example shows how to integrate the Unblu Embedded Component App into a website without the need for any JavaScript code, using only HTML.
 
 For more information about the Unblu Embedded App Component see its [documentation](https://www.unblu.com/en/docs/latest/reference/unblu-embedded-js-api/).
 
 ## Adapting the example to your environment
-When looking into the [index.html](./index.html) you will find a `<script>` and an `<unblu-embedded-app>` tag.
-In order to make this example work in your environment some changes have to be done.
-Depending on if you are using the Unblu cloud or an on premises installation chose your use case and follow the steps there:
+In the [index.html](./index.html)  file, you will find a `<script>` and an `<unblu-embedded-app>` tag.
+To make this example work in your environment, you must make some changes.
+The changes required vary depending on whether you're using the Unblu Cloud or an on-premises installation.
 
-### Unblu cloud
-When running on the Unblu cloud replace the value of the `api-key` attribute of the `<unblu-embedded-app>` from `MZsy5sFESYqU7MawXZgR_w` with your API key which you can find under `Account Management Page -> API Keys`
+### Unblu Cloud
+Replace the value of the `api-key` attribute of the `<unblu-embedded-app>` with your API key.
+You can find your API key under `Account Management Page -> API Keys`.
 
-### On premises
-When running an on premises installation replace the `unblu.cloud` origin in the `<script>` tag with the origin you are hosting Unblu from. Depending on your integration, the API Key may also have to be changed.
+### On-premises installation
+Replace the `unblu.cloud` origin in the `<script>` tag with the origin you are hosting Unblu from.
+Depending on your integration, you may also have to change the API Key.
 
 ## Running the example
 This example does not have to be built.
