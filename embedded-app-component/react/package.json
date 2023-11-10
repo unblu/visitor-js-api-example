@@ -19,7 +19,8 @@
     "@unblu/embedded-app-component": "^7.0.0"
   },
   "devDependencies": {
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "typescript": "^5.2.2"
   },
   "browserslist": {
     "production": [
