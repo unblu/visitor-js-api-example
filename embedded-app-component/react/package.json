@@ -12,15 +12,15 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@types/react": "^18.2.28",
-    "@types/react-dom": "^18.2.13",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "@unblu/embedded-app-component": "^7.0.0"
   },
   "devDependencies": {
     "react-scripts": "latest",
-    "typescript": "^5.2.2"
+    "typescript": "^4.9.5"
   },
   "browserslist": {
     "production": [
