@@ -24,7 +24,7 @@
     "@unblu/embedded-app-component": "^7.0.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^20.0.1",
+    "@angular-devkit/build-angular": "^22.1.2",
     "@angular/cli": "^21.1.0",
     "@angular/compiler-cli": "^21.0.2",
     "@types/jasmine": "~4.3.0",
